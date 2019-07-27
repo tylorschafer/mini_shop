@@ -352,4 +352,3 @@ When I click the link
 Then a 'PATCH' request is sent to '/items/:id/activate' or 'items/:id/deactivate' (depending on the link)
 and I am redirected to the Item Show page where I see the active status has been toggled
 ```
-
