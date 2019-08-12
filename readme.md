@@ -79,6 +79,8 @@ BE Mod 2 Week 1 Solo Project
 
 - if there is a specific gem you'd like to use in the project, please get permission from your instructors firs
 
+## User Stories
+
 ```
 [ ] done
 
