@@ -6,7 +6,7 @@ BE Mod 2 Week 1 Solo Project
 ### Rails
 
 * Implement CRUD functionality for a resource using forms (form_tag or form_for), buttons, and links
-* Use MVC to organize code effectively, limiting the amount of logic included in views 
+* Use MVC to organize code effectively, limiting the amount of logic included in views and controllers
 * Create routes for
 * standalone resources
 * nested resources
@@ -31,7 +31,7 @@ BE Mod 2 Week 1 Solo Project
 
 ### Testing and Debugging
 
-* Write feature and model tests utilizing:
+* Write feature tests utilizing:
 * RSpec and Capybara
 * CSS selectors to target specific areas of a page
 * Use Pry or Byebug in Rails files to get more information about an error
@@ -77,7 +77,19 @@ BE Mod 2 Week 1 Solo Project
 
 ## Permission
 
-- if there is a specific gem you'd like to use in the project, please get permission from your instructors first
+- if there is a specific gem you'd like to use in the project, please get permission from your instructors firs
+
+```
+[ ] done
+
+User Story 1, Deploy your application to Heroku
+
+As a visitor or user of the site
+I will perform all user stories
+By visiting the application on Heroku.
+Localhost is fine for development, but
+the application must be hosted on Heroku.
+```
 
 ---
 
@@ -87,7 +99,7 @@ Merchants are organizations/companies who sell items on our site (as opposed to 
 ```
 [ ] done
 
-User Story 1, Merchant Index
+User Story 2, Merchant Index
 
 As a visitor
 When I visit '/merchants'
@@ -97,7 +109,7 @@ Then I see the name of each merchant in the system
 ```
 [ ] done
 
-User Story 2, Merchant Show
+User Story 3, Merchant Show
 
 As a visitor
 When I visit '/merchants/:id'
@@ -112,7 +124,7 @@ Then I see the merchant with that id including the merchant's:
 ```
 [ ] done
 
-User Story 3, Merchant Creation
+User Story 4, Merchant Creation
 
 As a visitor
 When I visit the Merchant Index page
@@ -134,7 +146,7 @@ and I am redirected to the Merchant Index page where I see the new Merchant list
 ```
 [ ] done
 
-User Story 4, Merchant Update
+User Story 5, Merchant Update
 
 As a visitor
 When I visit a merchant show page
@@ -146,7 +158,6 @@ Then I am taken to '/merchants/:id/edit' where I  see a form to edit the merchan
 - city
 - state
 - zip
-The form fields are prepopulated with the merchant's current info
 When I fill out the form with updated information
 And I click the button to submit the form
 Then a `PATCH` request is sent to '/merchants/:id',
@@ -157,7 +168,7 @@ and I am redirected to the Merchant's Show page where I see the merchant's updat
 ```
 [ ] done
 
-User Story 5, Merchant Delete
+User Story 6, Merchant Delete
 
 As a visitor
 When I visit a merchant show page
@@ -176,7 +187,7 @@ Items are sold on the site. They belong to a merchant.
 ```
 [ ] done
 
-User Story 6, Item Index
+User Story 7, Item Index
 
 As a visitor
 When I visit '/items'
@@ -193,7 +204,7 @@ Then I see each Item in the system including the Item's:
 ```
 [ ] done
 
-User Story 7, Merchant Items Index
+User Story 8, Merchant Items Index
 
 As a visitor
 When I visit '/merchants/:merchant_id/items'
@@ -208,7 +219,7 @@ Then I see each Item that belongs to the Merchant with that merchant_id includin
 ```
 [ ] done
 
-User Story 8, Item Show
+User Story 9, Item Show
 
 As a visitor
 When I visit '/items/:id'
@@ -225,7 +236,7 @@ Then I see the item with that id including the item's:
 ```
 [ ] done
 
-User Story 9, Merchant Item Creation
+User Story 10, Merchant Item Creation
 
 As a visitor
 When I visit a Merchant Items Index page
@@ -247,7 +258,7 @@ and I am redirected to the Merchant Items Index page where I see the new item
 ```
 [ ] done
 
-User Story 10, Item Update
+User Story 11, Item Update
 
 As a visitor
 When I visit an Item Show page
@@ -265,6 +276,20 @@ the item's data is updated,
 and I am redirected to the Item Show page where I see the Item's updated information
 ```
 
+```
+[ ] done
+
+User Story 12, Item Delete
+
+As a visitor
+When I visit an item show page
+Then I see a link to delete the item
+When I click the link
+Then a 'DELETE' request is sent to '/items/:id',
+the item is deleted,
+and I am redirected to the item index page where I no longer see this item
+```
+
 ---
 
 ## Usability
@@ -273,7 +298,7 @@ Users should be able to use the site easily. This means making sure there are li
 ```
 [ ] done
 
-User Story 11, Merchant Links
+User Story 13, Merchant Links
 
 As a visitor
 When I click on the name a merchant anywhere on the site
@@ -283,7 +308,7 @@ Then that link takes me to that Merchant's show page
 ```
 [ ] done
 
-User Story 12, Item Links
+User Story 14, Item Links
 
 As a visitor
 When I click on the name a item anywhere on the site
@@ -293,7 +318,7 @@ Then that link takes me to that Item's show page
 ```
 [ ] done
 
-User Story 13, Item Index Link
+User Story 15, Item Index Link
 
 As a visitor
 When I visit any page on the site
@@ -303,7 +328,7 @@ Then I see a link at the top of the page that takes me to the Item Index
 ```
 [ ] done
 
-User Story 14, Merchant Index Link
+User Story 16, Merchant Index Link
 
 As a visitor
 When I visit any page on the site
@@ -313,7 +338,17 @@ Then I see a link at the top of the page that takes me to the Merchant Index
 ```
 [ ] done
 
-User Story 15, Styling
+User Story 17, Merchant Item Index Link
+
+As a visitor
+When I visit a merchant show page ('/merchants/:id')
+Then I see a link to take me to that merchant's items page ('/merchants/:id/items')
+```
+
+```
+[ ] done
+
+User Story 18, Styling
 
 As a visitor
 When I visit any page on the site
@@ -327,7 +362,7 @@ Then I should see a reasonably well styled page
 ```
 [ ] done
 
-User Story 16, Item Filter by Active Status
+User Story 19, Item Filter by Active Status
 
 As a visitor
 When I visit a Merchant Items Index page
@@ -341,7 +376,7 @@ And I see only the Items sold by the merchant that are active/inactive.
 ```
 [ ] done
 
-User Story 17, Change Item's Active Status
+User Story 20, Change Item's Active Status
 
 As a visitor
 When I visit an Item Show page
@@ -352,3 +387,4 @@ When I click the link
 Then a 'PATCH' request is sent to '/items/:id/activate' or 'items/:id/deactivate' (depending on the link)
 and I am redirected to the Item Show page where I see the active status has been toggled
 ```
+
