@@ -31,7 +31,7 @@ BE Mod 2 Week 1 Solo Project
 
 ### Testing and Debugging
 
-* Write feature tests utilizing:
+* Write feature and model tests utilizing:
 * RSpec and Capybara
 * CSS selectors to target specific areas of a page
 * Use Pry or Byebug in Rails files to get more information about an error
@@ -77,7 +77,7 @@ BE Mod 2 Week 1 Solo Project
 
 ## Permission
 
-- if there is a specific gem you'd like to use in the project, please get permission from your instructors firs
+- if there is a specific gem you'd like to use in the project, please get permission from your instructors first
 
 ---
 
