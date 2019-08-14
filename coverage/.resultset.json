@@ -214,8 +214,8 @@
         1,
         1,
         null,
-        0,
-        0,
+        1,
+        1,
         0,
         0,
         0,
@@ -247,6 +247,10 @@
         1,
         null,
         null,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/Users/t_schafer/turing/2module/projects/mini_shop/app/controllers/application_controller.rb": [
@@ -255,6 +259,6 @@
         null
       ]
     },
-    "timestamp": 1565751848
+    "timestamp": 1565753078
   }
 }
