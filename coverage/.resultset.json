@@ -188,7 +188,7 @@
         1,
         null
       ],
-      "/Users/t_schafer/turing/2module/projects/mini_shop/spec/features/merchants/merchant_show_page_spec.rb": [
+      "/Users/t_schafer/turing/2module/projects/mini_shop/spec/features/merchants/merchant_show_spec.rb": [
         1,
         null,
         1,
@@ -259,6 +259,6 @@
         null
       ]
     },
-    "timestamp": 1565799780
+    "timestamp": 1565800313
   }
 }

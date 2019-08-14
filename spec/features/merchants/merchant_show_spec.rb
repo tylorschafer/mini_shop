@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'merchants show page', type: :feature do
+describe 'when I visit a merchants show page', type: :feature do
 
   before :each do
 
@@ -20,7 +20,7 @@ describe 'merchants show page', type: :feature do
     )
   end
 
-  it 'user can see all merchant info' do
+  it 'I can see all of that merchants info' do
     visit "/merchants/#{@merchant_1.id}"
 
     expect(page).to have_content(@merchant_1.name)

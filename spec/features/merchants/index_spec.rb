@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'merchants index page', type: :feature do
+describe 'when I visit the merchant index', type: :feature do
   before :each do
 
     @merchant_1 = Merchant.create!(
@@ -19,7 +19,7 @@ RSpec.describe 'merchants index page', type: :feature do
     )
   end
 
-  it 'user can see all songs' do
+  it 'I can see all merchants names' do
     visit "/merchants"
 
     expect(page).to have_content(@merchant_1.name)
