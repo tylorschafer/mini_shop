@@ -3,14 +3,14 @@ require 'rails_helper'
 RSpec.describe 'merchants index page', type: :feature do
   before :each do
 
-    @merchant_1 = Merchant.create(
+    @merchant_1 = Merchant.create!(
       name: "Rick's Risky Tire Euporium",
       address: "123 Fake Lane",
       city: "Fakeville",
       state: "Colorado",
       zip: "80203"
     )
-    @merchant_2 = Merchant.create(
+    @merchant_2 = Merchant.create!(
       name: "Wild Wild Western Fabrics",
       address: "456 Not Real Ct",
       city: "False Town",
