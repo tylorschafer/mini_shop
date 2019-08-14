@@ -3,6 +3,7 @@ require 'rails_helper'
 describe 'merchants index page', type: :feature do
 
   before :each do
+
     @merchant_1 = Merchant.create(
       name: "Rick's Risky Tire Euporium",
       address: "123 Fake Lane",
@@ -20,8 +21,7 @@ describe 'merchants index page', type: :feature do
   end
 
   it 'user can see all songs' do
-
-    visit "/merchants/1"
+    visit "/merchants/#{@merchant_1.id}"
 
     expect(page).to have_content(@merchant_1.name)
     expect(page).to have_content(@merchant_1.address)
@@ -29,7 +29,7 @@ describe 'merchants index page', type: :feature do
     expect(page).to have_content(@merchant_1.state)
     expect(page).to have_content(@merchant_1.zip)
 
-    visit "/merchants/2"
+    visit "/merchants/#{@merchant_2.id}"
 
     expect(page).to have_content(@merchant_2.name)
     expect(page).to have_content(@merchant_2.address)
