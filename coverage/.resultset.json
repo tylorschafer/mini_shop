@@ -182,6 +182,7 @@
         1,
         1,
         1,
+        1,
         null
       ],
       "/Users/t_schafer/turing/2module/projects/mini_shop/app/helpers/application_helper.rb": [
@@ -206,9 +207,9 @@
         null,
         1,
         null,
-        0,
+        1,
         null,
-        0,
+        1,
         0,
         0,
         0,
@@ -289,6 +290,10 @@
         2,
         null,
         null,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/t_schafer/turing/2module/projects/mini_shop/app/controllers/application_controller.rb": [
@@ -297,6 +302,6 @@
         null
       ]
     },
-    "timestamp": 1565889207
+    "timestamp": 1565892399
   }
 }
