@@ -183,9 +183,13 @@
         1,
         1,
         1,
-        null,
         1,
         null,
+        1,
+<<<<<<< HEAD
+        null,
+=======
+>>>>>>> 1e01d9a35386dc8fd5804b3647a3028041ca3047
         1,
         null
       ],
@@ -193,6 +197,7 @@
         1,
         null
       ],
+<<<<<<< HEAD
       "/Users/t_schafer/turing/2module/projects/mini_shop/spec/features/merchants/edit_spec.rb": [
         null,
         null,
@@ -207,6 +212,8 @@
         null,
         null
       ],
+=======
+>>>>>>> 1e01d9a35386dc8fd5804b3647a3028041ca3047
       "/Users/t_schafer/turing/2module/projects/mini_shop/spec/features/merchants/index_spec.rb": [
         1,
         null,
@@ -357,25 +364,37 @@
         null,
         1,
         6,
+<<<<<<< HEAD
+=======
         null,
+>>>>>>> 1e01d9a35386dc8fd5804b3647a3028041ca3047
         null,
-        1,
-        null,
-        null,
-        1,
-        1,
         1,
         null,
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
         1,
         null,
         null,
         1,
+        1,
+        1,
+        null,
+<<<<<<< HEAD
         null,
         1,
+=======
+>>>>>>> 1e01d9a35386dc8fd5804b3647a3028041ca3047
+        null,
         1,
+        null,
+        1,
+        2,
         null,
         null,
         null
@@ -386,6 +405,10 @@
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1565896692
+=======
+    "timestamp": 1565895681
+>>>>>>> 1e01d9a35386dc8fd5804b3647a3028041ca3047
   }
 }
