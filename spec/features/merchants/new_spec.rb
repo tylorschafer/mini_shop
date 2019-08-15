@@ -21,7 +21,7 @@ describe 'As a vistor' do
         fill_in 'Address', with: merchant.address
         fill_in 'City', with: merchant.city
         fill_in 'State', with: merchant.state
-        fill_in 'Postal Code', merchant.zip
+        fill_in 'Postal Code', with: merchant.zip
         click_on 'Create Merchant'
 
         expect(current_path).to eq("/merchants")
