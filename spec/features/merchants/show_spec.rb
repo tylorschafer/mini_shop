@@ -38,4 +38,10 @@ describe 'when I visit a merchants show page', type: :feature do
     expect(page).to have_content(@merchant_2.zip)
     expect(page).to_not have_content(@merchant_1.name)
   end
+
+  it 'I can see a link to update the merchants info' do
+    visit "/merchants/#{@merchant_1.id}"
+
+    expect(page).to have_link('Update Merchant')
+  end
 end
