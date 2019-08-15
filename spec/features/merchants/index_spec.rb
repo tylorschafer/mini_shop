@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'when I visit the merchant index', type: :feature do
+describe 'when I visit the merchant index' do
   before :each do
 
     @merchant_1 = Merchant.create!(
