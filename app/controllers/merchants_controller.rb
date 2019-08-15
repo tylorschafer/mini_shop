@@ -12,7 +12,12 @@ class MerchantsController < ApplicationController
   end
 
   def create
-    merchant = Merchant.create!(merchant_params)
+    Merchant.create!(merchant_params)
+    redirect_to '/merchants'
+  end
+
+  def delete
+    Merchant.destroy(params[:id])
     redirect_to '/merchants'
   end
 
