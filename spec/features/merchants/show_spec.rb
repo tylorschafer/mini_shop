@@ -44,4 +44,10 @@ describe 'when I visit a merchants show page', type: :feature do
 
     expect(page).to have_link('Update Merchant')
   end
+
+  it "I can see a link to delete the merchant" do
+    visit "/merchants/#{@merchant_1.id}"
+
+    expect(page).to have_link('Delete Merchant')
+  end
 end
