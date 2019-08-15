@@ -418,7 +418,7 @@
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">  def create</code>
+          <code class="ruby">  def edit</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="15">
@@ -427,25 +427,55 @@
           <code class="ruby">    Merchant.create!(merchant_params)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">    redirect_to &#39;/merchants&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    merchant = Merchant.update(merchant_params)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    redirect_to &quot;/merchants/#{params[:id]}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
           <span class="hits">1</span>
           
           <code class="ruby">  def delete</code>
@@ -482,12 +512,13 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
-          
-          
+
+         
           <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="26">
+
           <span class="hits">1</span>
           
           <code class="ruby">  def merchant_params</code>
@@ -504,7 +535,7 @@
           
           <code class="ruby">  end</code>
         </li>
-      
+
         <li class="never" data-hits="" data-linenumber="29">
           
           
@@ -1811,6 +1842,79 @@
           <code class="ruby">  get &#39;/merchants/:id&#39;, to: &#39;merchants#show&#39;</code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  get &#39;/merchants/:id/edit&#39;, to: &#39;merchants#edit&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  post &#39;/merchants&#39;, to: &#39;merchants#create&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  patch &#39;/merchants/:id&#39;, to: &#39;merchants#update&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="9791f69f521ce6b32fb4a5a20fd52d453fee6387">
+  <div class="header">
+    <h3>spec/features/merchants/index_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &#39;when I visit the merchant index&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before :each do</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="5">
           
           
@@ -1820,11 +1924,10 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  post &#39;/merchants&#39;, to: &#39;merchants#create&#39;</code>
+          <code class="ruby">    @merchant_1 = Merchant.create!(</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
-          
           
           <code class="ruby"></code>
         </li>
@@ -1989,7 +2092,7 @@
       
         <li class="never" data-hits="" data-linenumber="7">
           
-          
+
           <code class="ruby">      name: &quot;Rick&#39;s Risky Tire Euporium&quot;,</code>
         </li>
       
