@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'As a vistor' do
   describe 'when I visit the merchant index' do
-    it 'I can create new merchants' do
+    it 'I can create a new merchant' do
       merchant = Merchant.create!(
         name: "Rick's Risky Tire Euporium",
         address: "123 Fake Lane",
