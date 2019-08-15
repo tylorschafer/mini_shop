@@ -17,19 +17,19 @@ describe 'As a vistor' do
 
         expect(current_path).to eq("/merchants/new")
 
-        fill_in 'Name', with: "#{merchant.name}"
-        fill_in 'Address', with: "#{merchant.address}"
-        fill_in 'City', with: "#{merchant.city}"
-        fill_in 'State', with: "#{merchant.state}"
-        fill_in 'Postal Code', "#{merchant.zip}"
+        fill_in 'Name', with: merchant.name
+        fill_in 'Address', with: merchant.address
+        fill_in 'City', with: merchant.city
+        fill_in 'State', with: merchant.state
+        fill_in 'Postal Code', merchant.zip
         click_on 'Create Merchant'
 
         expect(current_path).to eq("/merchants")
-        expect(page).to have_content("#{merchant.name}")
-        expect(page).to have_content("#{merchant.address}")
-        expect(page).to have_content("#{merchant.city}")
-        expect(page).to have_content("#{merchant.state}")
-        expect(page).to have_content("#{merchant.zip}")
+        expect(page).to have_content(merchant.name)
+        expect(page).to have_content(merchant.address)
+        expect(page).to have_content(merchant.city)
+        expect(page).to have_content(merchant.state)
+        expect(page).to have_content(merchant.zip)
     end
   end
 end
