@@ -1,0 +1,20 @@
+<h1>Update Merchant Info</h1>
+
+<%= form_tag "/merchants/#{@merchant_id}", method: :patch do %>
+  <%= label_tag 'Name' %>
+  <%= text_field_tag 'name' %>
+
+  <%= label_tag 'Address' %>
+  <%= text_field_tag 'address' %>
+
+  <%= label_tag 'City' %>
+  <%= text_field_tag 'city' %>
+
+  <%= label_tag 'State' %>
+  <%= text_field_tag 'state' %>
+
+  <%= label_tag 'Zip' %>
+  <%= number_field_tag 'zip' %>
+
+  <%= submit_tag 'Update Merchant' %>
+<% end %>
