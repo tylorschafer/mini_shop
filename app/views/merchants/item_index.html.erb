@@ -1,0 +1,9 @@
+<h1><%= @merchant.name  %> Inventory</h1>
+<hr>
+<% @merchant.items.each do |item| %>
+<p><%= item.name %></p>
+<p><%= number_to_currency(item.price) %></p>
+<img src="<%= item.image %>">
+<p><%= item.active_status %></p>
+<p><%= item.inventory %></p>
+<% end %>
