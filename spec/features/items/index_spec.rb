@@ -9,21 +9,23 @@ describe 'When I visit the items index' do
       state: "Colorado",
       zip: "80203"
     )
-    merchant.items.create!(
+    item_1 = Item.create!(
       name: 'Super Tread 9000',
       description: 'A real nice tire',
       price: 9999,
       image: 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjxl4ff0IXkAhVE_J4KHR8uD3MQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.toyotires.com%2Ftire%2Fpattern%2Fmud-tires-open-country-mt&psig=AOvVaw1Cq_MM4SRupK4uGweZmf67&ust=1565984403681779',
       active_status: true,
       inventory: 657,
+      merchant_id: merchant.id
     )
-    merchat.items.create!(
+    item_2 = Item.create!(
       name: 'Rubber Max 1000',
       description: 'Should get you there safely',
       price: 1000,
       image: 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiOicTwg4bkAhXnCTQIHfTUCqUQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.daytontrucktires.com%2Fen-us%2Findex&psig=AOvVaw1Cq_MM4SRupK4uGweZmf67&ust=1565984403681779',
       active_status: true,
       inventory: 10934,
+      merchant_id: merchant.id
     )
 
     visit '/items'

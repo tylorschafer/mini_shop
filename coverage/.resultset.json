@@ -184,6 +184,7 @@
         1,
         1,
         1,
+        1,
         null,
         1,
         null,
@@ -418,9 +419,14 @@
         2,
         2,
         null,
+        null,
+        1,
+        2,
+        null,
         null
       ],
-      "/Users/t_schafer/turing/2module/projects/mini_shop/app/models/concerns/merchant.rb": [
+      "/Users/t_schafer/turing/2module/projects/mini_shop/app/models/merchant.rb": [
+        1,
         1,
         1,
         null
@@ -474,8 +480,21 @@
         1,
         1,
         null
+      ],
+      "/Users/t_schafer/turing/2module/projects/mini_shop/app/models/item.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/t_schafer/turing/2module/projects/mini_shop/app/controllers/items_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1565920718
+    "timestamp": 1565922069
   }
 }
