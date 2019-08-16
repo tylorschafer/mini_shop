@@ -17,6 +17,14 @@ describe 'When I click the delete merchant link' do
       state: "Colorado",
       zip: "80203"
     )
+    merchant.items.create!(
+      name: 'Wolly Rug',
+      description: 'This should look nice!',
+      price: 98243,
+      image: 'https://i.ebayimg.com/thumbs/images/g/uI4AAOSwv7BdKJfP/s-l225.jpg',
+      active_status: true,
+      inventory: 444,
+    )
 
     visit "/merchants/#{merchant.id}"
 

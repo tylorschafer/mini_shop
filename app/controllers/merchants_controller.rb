@@ -20,8 +20,7 @@ class MerchantsController < ApplicationController
   end
 
   def create
-    merchant = Merchant.create!(merchant_params)
-    merchant.save
+    Merchant.create!(merchant_params)
     redirect_to '/merchants'
   end
 
@@ -33,8 +32,7 @@ class MerchantsController < ApplicationController
   end
 
   def update
-    merchant = Merchant.update(merchant_params)
-    merchant.save
+    Merchant.update(merchant_params)
     redirect_to "/merchants/#{params[:id]}"
   end
 
