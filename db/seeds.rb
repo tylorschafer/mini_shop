@@ -1,6 +1,7 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 Merchant.destroy_all
+Item.destroy_all
 
 ricks = Merchant.create(
   name: "Rick's Risky Tire Euporium",
@@ -13,7 +14,7 @@ ricks.items.create!(
   name: 'Super Tread 9000',
   description: 'A real nice tire',
   price: 9999,
-  image: 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjxl4ff0IXkAhVE_J4KHR8uD3MQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.toyotires.com%2Ftire%2Fpattern%2Fmud-tires-open-country-mt&psig=AOvVaw1Cq_MM4SRupK4uGweZmf67&ust=1565984403681779',
+  image: 'https://images.tirebuyer.com/visual-aids/products/tires/falken/wildpeakat3w/falken_wildpeakat3w_rbl_341933_sidewall_jpg_s3_resize_64x64_sidewall.jpg',
   active_status: true,
   inventory: 657,
 )
