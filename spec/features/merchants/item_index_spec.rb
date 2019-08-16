@@ -27,7 +27,6 @@ describe 'Merchant item index' do
       inventory: 10934,
       merchant_id: ricks.id
     )
-
     visit "/merchants/#{ricks.id}/items"
 
     expect(page).to have_content(item_1.name)

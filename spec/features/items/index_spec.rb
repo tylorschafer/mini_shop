@@ -29,7 +29,6 @@ describe 'When I visit the items index' do
     )
 
     visit '/items'
-    binding.pry
     expect(page).to have_content(item_1.name)
     expect(page).to have_content(item_1.description)
     expect(page).to have_content("$9,999.00")
