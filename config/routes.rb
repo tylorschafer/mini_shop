@@ -9,5 +9,4 @@ Rails.application.routes.draw do
   delete '/merchants/:id', to: 'merchants#delete'
 
   patch '/merchants/:id', to: 'merchants#update'
-
 end

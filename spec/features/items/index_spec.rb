@@ -1,14 +1,3 @@
-# As a visitor
-# When I visit '/items'
-# Then I see each Item in the system including the Item's:
-# - name
-# - description
-# - price
-# - image
-# - active/inactive status
-# - inventory
-# - the name of the merchant that sells the item
-
 require 'rails_helper'
 
 describe 'When I visit the items index' do
@@ -22,11 +11,19 @@ describe 'When I visit the items index' do
     )
     merchant.items.create!(
       name: 'Super Tread 9000',
-      description: 'A Real Nice Tire',
+      description: 'A real nice tire',
       price: 9999,
       image: 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjxl4ff0IXkAhVE_J4KHR8uD3MQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.toyotires.com%2Ftire%2Fpattern%2Fmud-tires-open-country-mt&psig=AOvVaw1Cq_MM4SRupK4uGweZmf67&ust=1565984403681779',
       active_status: true,
       inventory: 657,
+    )
+    merchat.items.create!(
+      name: 'Rubber Max 1000',
+      description: 'Should get you there safely',
+      price: 1000,
+      image: 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiOicTwg4bkAhXnCTQIHfTUCqUQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.daytontrucktires.com%2Fen-us%2Findex&psig=AOvVaw1Cq_MM4SRupK4uGweZmf67&ust=1565984403681779',
+      active_status: true,
+      inventory: 10934,
     )
 
     visit '/items'
@@ -38,5 +35,13 @@ describe 'When I visit the items index' do
     expect(page).to have_content(item_1.status)
     expect(page).to have_content(item_1.inventory)
     expect(page).to have_content(item_1.merchant.name)
+
+    expect(page).to have_content(item_2.name)
+    expect(page).to have_content(item_2.description)
+    expect(page).to have_content(item_2.price)
+    expect(page).to have_css("img[src*='#{item_2.image}']")
+    expect(page).to have_content(item_2.status)
+    expect(page).to have_content(item_2.inventory)
+    expect(page).to have_content(item_2.merchant.name)
   end
 end

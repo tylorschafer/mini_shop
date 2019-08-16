@@ -190,11 +190,40 @@
         1,
         null,
         1,
-        null,
         null
       ],
       "/Users/t_schafer/turing/2module/projects/mini_shop/app/helpers/application_helper.rb": [
         1,
+        null
+      ],
+      "/Users/t_schafer/turing/2module/projects/mini_shop/spec/features/merchants/destroy_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/t_schafer/turing/2module/projects/mini_shop/spec/features/merchants/edit_spec.rb": [
@@ -434,6 +463,6 @@
         null
       ]
     },
-    "timestamp": 1565897455
+    "timestamp": 1565918482
   }
 }
