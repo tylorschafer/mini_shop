@@ -41,6 +41,5 @@ describe 'Merchant item index' do
     expect(page).to have_css("img[src*='#{item_2.image}']")
     expect(page).to have_content(item_2.active_status)
     expect(page).to have_content(item_2.inventory)
-
   end
 end
