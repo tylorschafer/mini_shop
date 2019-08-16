@@ -7,3 +7,4 @@
 <p>Active = <%= item.active_status.to_s.capitalize  %></p>
 <p>Stock: <%= item.inventory %></p>
 <% end %>
+<p><%= link_to 'Add new item', "/merchants/#{@merchant.id}/items/new" %></p>
