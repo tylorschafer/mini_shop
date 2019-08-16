@@ -1,0 +1,10 @@
+<h1>All Items</h1>
+<hr>
+<% @items.each do |item| %>
+  <p><%= item.name %></p>
+  <p><%= item.description %></p>
+  <p><%= number_to_currency(item.price) %></p>
+  <p><img src="<%= item.image %>"></p>
+  <p><%= item.active_status %></p>
+  <p><%= item.inventory %></p>
+<% end %>
