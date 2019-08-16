@@ -24,7 +24,7 @@ describe 'When I visit the items index' do
       price: 1000,
       image: 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiOicTwg4bkAhXnCTQIHfTUCqUQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.daytontrucktires.com%2Fen-us%2Findex&psig=AOvVaw1Cq_MM4SRupK4uGweZmf67&ust=1565984403681779',
       active_status: true,
-      inventory: 10934,
+      inventory: 4999,
       merchant_id: merchant.id
     )
 
@@ -40,7 +40,7 @@ describe 'When I visit the items index' do
 
     expect(page).to have_content(item_2.name)
     expect(page).to have_content(item_2.description)
-    expect(page).to have_content("$10,934.00")
+    expect(page).to have_content("$1,000.00")
     expect(page).to have_css("img[src*='#{item_2.image}']")
     expect(page).to have_content(item_2.active_status)
     expect(page).to have_content(item_2.inventory)
