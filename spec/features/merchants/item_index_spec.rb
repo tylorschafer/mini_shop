@@ -23,22 +23,22 @@ describe 'Merchant item index' do
       description: 'Should get you there safely',
       price: 1000,
       image: 'https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiOicTwg4bkAhXnCTQIHfTUCqUQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.daytontrucktires.com%2Fen-us%2Findex&psig=AOvVaw1Cq_MM4SRupK4uGweZmf67&ust=1565984403681779',
-      active_status: true,
+      active_status: false,
       inventory: 10934,
       merchant_id: ricks.id
     )
     visit "/merchants/#{ricks.id}/items"
 
     expect(page).to have_content(item_1.name)
-    expect(page).to have_content("$9,999.00")
+    expect(page).to have_content("Price: $9,999.00")
     expect(page).to have_css("img[src*='#{item_1.image}']")
-    expect(page).to have_content(item_1.active_status)
-    expect(page).to have_content(item_1.inventory)
+    expect(page).to have_content("Active = True")
+    expect(page).to have_content("Stock: #{item_1.inventory}")
 
     expect(page).to have_content(item_2.name)
-    expect(page).to have_content("$1,000.00")
+    expect(page).to have_content("Price: $1,000.00")
     expect(page).to have_css("img[src*='#{item_2.image}']")
-    expect(page).to have_content(item_2.active_status)
-    expect(page).to have_content(item_2.inventory)
+    expect(page).to have_content("Active = False")
+    expect(page).to have_content("Stock: #{item_2.inventory}")
   end
 end
