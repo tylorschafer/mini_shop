@@ -32,17 +32,17 @@ describe 'When I visit the items index' do
 
     expect(page).to have_content(item_1.name)
     expect(page).to have_content(item_1.description)
-    expect(page).to have_content(item_1.price)
+    expect(page).to have_content("$9,999.00")
     expect(page).to have_css("img[src*='#{item_1.image}']")
-    expect(page).to have_content(item_1.status)
+    expect(page).to have_content(item_1.active_status)
     expect(page).to have_content(item_1.inventory)
     expect(page).to have_content(item_1.merchant.name)
 
     expect(page).to have_content(item_2.name)
     expect(page).to have_content(item_2.description)
-    expect(page).to have_content(item_2.price)
+    expect(page).to have_content("$10,934.00")
     expect(page).to have_css("img[src*='#{item_2.image}']")
-    expect(page).to have_content(item_2.status)
+    expect(page).to have_content(item_2.active_status)
     expect(page).to have_content(item_2.inventory)
     expect(page).to have_content(item_2.merchant.name)
   end
