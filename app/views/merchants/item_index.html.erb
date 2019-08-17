@@ -2,8 +2,9 @@
 <hr>
 <% @merchant.items.each do |item| %>
 <p><%= item.name %></p>
-<p><%= number_to_currency(item.price) %></p>
+<p>Price: <%= number_to_currency(item.price) %></p>
 <img src="<%= item.image %>">
-<p><%= item.active_status %></p>
-<p><%= item.inventory %></p>
+<p>Active = <%= item.active_status.to_s.capitalize  %></p>
+<p>Stock: <%= item.inventory %></p>
 <% end %>
+<p><%= link_to 'Add new item', "/merchants/#{@merchant.id}/items/new" %></p>

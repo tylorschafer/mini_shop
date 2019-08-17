@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe 'Merchant show page' do
-  it 'When I click the Delete Merchant link, the merchant is deleted' do
+describe 'Item show page' do
+  it 'When I click the Delete Item link, that Item is deleted' do
     merchant = Merchant.create!(
       name: "Rick's Risky Tire Euporium",
       address: "123 Fake Lane",
@@ -9,20 +9,21 @@ describe 'Merchant show page' do
       state: "Colorado",
       zip: "80203"
     )
-    merchant.items.create!(
+    item = Item.create!(
       name: 'Wolly Rug',
       description: 'This should look nice!',
       price: 98243,
       image: 'https://i.ebayimg.com/thumbs/images/g/uI4AAOSwv7BdKJfP/s-l225.jpg',
       active_status: true,
       inventory: 444,
+      merchant_id: merchant.id
     )
 
-    visit "/merchants/#{merchant.id}"
+    visit "/items/#{item.id}"
 
-    click_on 'Delete Merchant'
+    click_on 'Delete Item'
 
-    expect(current_path).to eq('/merchants')
-    expect(page).to_not have_content(merchant.name)
+    expect(current_path).to eq('/items')
+    expect(page).to_not have_content(item.name)
   end
 end

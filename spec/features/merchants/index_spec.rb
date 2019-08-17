@@ -1,8 +1,7 @@
 require 'rails_helper'
 
-describe 'when I visit the merchant index' do
+describe 'Merchant index' do
   before :each do
-
     @merchant_1 = Merchant.create!(
       name: "Rick's Risky Tire Euporium",
       address: "123 Fake Lane",

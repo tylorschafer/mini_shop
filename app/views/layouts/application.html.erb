@@ -6,6 +6,12 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <nav class="nav-bar">
+      <a class = "active" href="#home"> <%= link_to 'Home', '/', class: 'nav-links'%></a>
+      <a href="#merchants"> <%= link_to 'Merchants', '/merchants', class: 'nav-links'%></a>
+      <a href="#items"> <%= link_to 'Items', '/items', class: 'nav-links'%></a>
+    </nav>
   </head>
 
   <body>
