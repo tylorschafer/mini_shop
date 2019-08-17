@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-describe 'Merchant show page' do
-  it 'When I click the Delete Merchant link, the merchant is deleted' do
+describe 'Item show page' do
+  it 'When I click the Delete Item link, that Item is deleted' do
     merchant = Merchant.create!(
       name: "Rick's Risky Tire Euporium",
       address: "123 Fake Lane",

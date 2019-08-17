@@ -1,8 +1,7 @@
 require 'rails_helper'
 
-describe 'when I visit a merchants show page', type: :feature do
+describe 'Merchant show page', type: :feature do
   before :each do
-
     @merchant_1 = Merchant.create!(
       name: "Rick's Risky Tire Euporium",
       address: "123 Fake Lane",

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'When I visit the items index' do
+describe 'Items index' do
   it 'I see each item and their characteristics' do
     merchant = Merchant.create!(
       name: "Rick's Risky Tire Euporium",

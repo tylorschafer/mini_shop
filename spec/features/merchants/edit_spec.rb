@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-describe 'After I click the update merchant link' do
-  describe 'I am taken to an edit page' do
-    it 'where I can edit a merchants info' do
+describe 'Merchant show page' do
+  describe 'When I click the Update Merchant link, I am taken to an edit page' do
+    it 'where I can change a merchants info' do
       merchant = Merchant.create!(
         name: "Wild Wild Western Fabrics",
         address: "456 Not Real Ct",
@@ -10,7 +10,6 @@ describe 'After I click the update merchant link' do
         state: "Michigan",
         zip: 20356
       )
-
       name = "Dangerous Daves Diving Boards"
       address = "666 Evil Court"
       city = "Inferno"
