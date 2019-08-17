@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/merchants/:id/edit', to: 'merchants#edit'
 
   post '/merchants', to: 'merchants#create'
+  post '/merchants/:merchant_id/items', to:'items#create'
 
   delete '/merchants/:id', to: 'merchants#delete'
 
