@@ -2,7 +2,7 @@
 <hr>
 <% @items.each do |item| %>
   <hr>
-  <p><%= item.name %></p>
+  <h3><%= link_to "#{item.name}", "/items/#{item.id}" %></h3>
   <p>Description: <%= item.description %></p>
   <p>Price: <%= number_to_currency(item.price) %></p>
   <img src="<%= item.image %>">
