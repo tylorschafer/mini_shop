@@ -1,6 +1,6 @@
-<h1>Add New Item</h1>
+<h1>Edit Item Info</h1>
 
-<%= form_tag "/merchants/#{@merchant_id}/items", method: :post do %>
+<%= form_tag "/items/#{@item_id}", method: :patch do %>
   <%= label_tag 'Name' %>
   <%= text_field_tag 'name' %>
 

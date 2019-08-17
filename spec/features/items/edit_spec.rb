@@ -43,6 +43,6 @@ describe 'Items show page' do
     expect(page).to have_content('Price: $899.00')
     expect(page).to have_content("Description: #{description}")
     expect(page).to have_css("img[src*='#{image}']")
-    expect(page).to have_content("Inventory: #{inventory}")
+    expect(page).to have_content("Stock: #{inventory}")
   end
 end

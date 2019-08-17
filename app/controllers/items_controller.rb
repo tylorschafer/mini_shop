@@ -12,6 +12,15 @@ class ItemsController < ApplicationController
     @merchant_id = params[:merchant_id]
   end
 
+  def edit
+    @item_id = params[:id]
+  end
+
+  def update
+    Item.find(params[:id]).update(item_params)
+    redirect_to "/items/#{params[:id]}"
+  end
+
   def create
     created_params = item_params
     created_params[:active_status] = true
