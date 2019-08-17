@@ -29,6 +29,11 @@ class ItemsController < ApplicationController
     redirect_to "/merchants/#{merchant.id}/items"
   end
 
+  def delete
+    Item.find(params[:id]).destroy
+    redirect_to '/items'
+  end
+
   private
 
   def item_params

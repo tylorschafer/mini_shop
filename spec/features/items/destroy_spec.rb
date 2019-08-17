@@ -9,7 +9,7 @@ describe 'Item show page' do
       state: "Colorado",
       zip: "80203"
     )
-    Item.create!(
+    item = Item.create!(
       name: 'Wolly Rug',
       description: 'This should look nice!',
       price: 98243,
@@ -23,7 +23,7 @@ describe 'Item show page' do
 
     click_on 'Delete Item'
 
-    expect(current_path).to eq('/merchants')
-    expect(page).to_not have_content(merchant.name)
+    expect(current_path).to eq('/items')
+    expect(page).to_not have_content(item.name)
   end
 end

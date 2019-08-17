@@ -36,4 +36,9 @@ describe 'Items show page' do
 
     expect(page).to have_link('Update Item')
   end
+  it "Has a link to delete item" do
+    visit "/items/#{@item.id}"
+
+    expect(page).to have_link('Delete Item')
+  end
 end
