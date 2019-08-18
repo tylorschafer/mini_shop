@@ -13,7 +13,7 @@ section {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-  background-color: #CDD6E9;
+  background-color: #DFDFDF;
   color: Black;
 }
 
