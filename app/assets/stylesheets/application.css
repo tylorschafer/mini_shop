@@ -13,8 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+ header {
+   background-color: #D1D3DE;
+   overflow: hidden;
+ }
+
+ body {
+   background-color: #D8DAE1;
+ }
+
+ h1 {
+   font-size: 100px;
+ }
 .nav-bar {
-  background-color: #333;
+  background-color: #6389C3;
   overflow: hidden;
 }
 
@@ -37,11 +50,24 @@
   color: White;
 }
 
+.homepage-pics {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  length: 50%;
+  width: 50%;
+  padding: 10px;
+  background-color: Black;
+  border: 2px White;
+}
+
+.homepage-body {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: SlateGrey;
+  Padding: 10px;
+}
+
 head {
   margin: 0
 }
-
- img {
-   length: 50px;
-   width: 50px
- }

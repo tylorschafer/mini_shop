@@ -1,10 +1,16 @@
+<%= stylesheet_link_tag '/assests/stylesheets/merchant_item_index' %>
+<header>
 <h1><%= @merchant.name  %> Inventory</h1>
+</header>
 <hr>
-<% @merchant.items.each do |item| %>
-<p><%= item.name %></p>
-<p>Price: <%= number_to_currency(item.price) %></p>
-<img src="<%= item.image %>">
-<p>Active = <%= item.active_status.to_s.capitalize  %></p>
-<p>Stock: <%= item.inventory %></p>
-<% end %>
 <p><%= link_to 'Add new item', "/merchants/#{@merchant.id}/items/new" %></p>
+<% @merchant.items.each do |item| %>
+<section class = 'index-table'>
+<p style='index-name'><%= item.name %></p>
+<p style='index-price'>Price: <%= number_to_currency(item.price) %></p>
+<img style='index-image' src="<%= item.image %>">
+<p style='index-status'>Active = <%= item.active_status.to_s.capitalize  %></p>
+<p style='index-stock'>Stock: <%= item.inventory %></p>
+</section>
+<hr>
+<% end %>

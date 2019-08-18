@@ -1,0 +1,29 @@
+.index-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 10px;
+}s
+
+.index-name {
+  grid-column: 3;
+  grid-row: 1;
+}
+.index-price {
+  grid-column: 3;
+  grid-row: 2;
+}
+.index-image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 50%;
+}
+.index-status {
+  grid-column: 1;
+  grid-row: 3;
+}
+.index-stock {
+  grid-column: 3;
+  grid-row: 3;
+}

@@ -1,6 +1,12 @@
-<h1>Merchants</h1>
-<%= link_to 'New Merchant', "/merchants/new" %>
-
+<%= stylesheet_link_tag '/assests/stylesheets/merchant_index' %>
+<body>
+<header>
+<h1>All Merchants</h1>
+</header>
+<section class = 'merchant-index'>
 <% @merchants.each do |merchant| %>
-  <h2><%= link_to "#{merchant.name}", "/merchants/#{merchant.id}" %></h2>
+  <h2><%= link_to "=> #{merchant.name}", "/merchants/#{merchant.id}" %></h2>
 <% end %>
+</section>
+</body>
+<h3><%= link_to 'New Merchant', "/merchants/new" %></h2>
