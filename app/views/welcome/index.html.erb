@@ -1,1 +1,8 @@
 <h1>Welcome to Tylor's Mini Shop!</h1>
+
+<h2>Check out some of our active sales </h2>
+<main class='homepage-body'>
+<% @items.each do |item| %>
+<%= link_to image_tag(item.image, :class => 'homepage-pics', :alt => "#{item.name}"), "/items/#{item.id}" %>
+<% end %>
+</main>

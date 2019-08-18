@@ -1,10 +1,15 @@
+<%= stylesheet_link_tag '/assests/stylesheets/item_show' %>
+<header>
 <h1><%= @item.name %></h1>
+</header>
 <hr>
-<p>Active = <%= @item.active_status.to_s.capitalize %></p>
-<p>Price: <%= number_to_currency(@item.price) %></p>
-<img src="<%= @item.image %>">
-<p>Description: <%= @item.description %></p>
-<p>Stock: <%= @item.inventory %></p>
-<p>Merchant: <%= @item.merchant.name %></p>
-<p><%= link_to 'Update Item', "/items/#{@item.id}/edit" %></p>
-<p><%= link_to 'Delete Item', "/items/#{@item.id}", method: :delete %></p>
+<section>
+<p class='one'>Active = <%= @item.active_status.to_s.capitalize %></p>
+<p class='two'>Price: <%= number_to_currency(@item.price) %></p>
+<center><%= image_tag @item.image, :class => 'three' %></center>
+<p class='four'>Description: <%= @item.description %></p>
+<p class='five'>Stock: <%= @item.inventory %></p>
+<p class='six'>Merchant: <%= @item.merchant.name %></p>
+<p class='seven'><%= link_to 'Update Item', "/items/#{@item.id}/edit" %></p>
+<p class='eight'><%= link_to 'Delete Item', "/items/#{@item.id}", method: :delete %></p>
+</section>

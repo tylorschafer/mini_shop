@@ -1,13 +1,18 @@
-<h1>All Items</h1>
+<%= stylesheet_link_tag '/assests/stylesheets/item_index' %>
+<header>
+  <h1>All Items</h1>
+</header>
 <hr>
 <% @items.each do |item| %>
   <hr>
-  <h3><%= link_to "#{item.name}", "/items/#{item.id}" %></h3>
-  <p>Description: <%= item.description %></p>
-  <p>Price: <%= number_to_currency(item.price) %></p>
-  <img src="<%= item.image %>">
-  <p>Active = <%= item.active_status.to_s.capitalize %></p>
-  <p>Stock: <%= item.inventory %></p>
-  <p>Merchant: <%= item.merchant.name %> </p>
+  <section>
+  <h3 style='one'><%= link_to "#{item.name}", "/items/#{item.id}" %></h3>
+  <p style='two'>Description: <%= item.description %></p>
+  <p style='three'>Price: <%= number_to_currency(item.price) %></p>
+  <%= image_tag item.image, :class => 'four' %>
+  <p style='five'>Active = <%= item.active_status.to_s.capitalize %></p>
+  <p style='six'>Stock: <%= item.inventory %></p>
+  <p style='seven'>Merchant: <%= item.merchant.name %> </p>
+  </section>
   <hr>
 <% end %>
