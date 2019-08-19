@@ -14,7 +14,7 @@ daves.items.create!(
   name: 'Alesis Strike Pro Kit',
   description: 'Traditional Drum Sizes and Real Drum FeelThe stunning new Alesis Strike Pro kit shatters all your pre-conceived notions about electronic drums. It combines the feel and familiarity of acoustic drums combined with the versatility and capability of the best electronic drums.',
   price: 2299,
-  image:'https://images-na.ssl-images-amazon.com/images/I/61yDRAtcJ5L._SX425_.jpg',
+  image:'https://www.thomann.de/pics/prod/416758.jpg',
   active_status: true,
   inventory: 55,
 )
@@ -64,4 +64,35 @@ ricks.items.create!(
   image: 'https://media.sweetwater.com/api/i/q-82__ha-3a6bceb35791642a__hmac-73334bec017e2f64a09d12204a4ae6260dbe9361/images/items/750/RodecasterPro-large.jpg',
   active_status: true,
   inventory: 283,
+)
+keaton = Merchant.create(
+  name: "Keaton's Keyboards",
+  address: "8675 Walk This Way",
+  city: "Musicville",
+  state: "Wyoming",
+  zip: "32645"
+)
+ricks.items.create!(
+  name: 'Williams Rhapsody 2',
+  description: 'The Williams Rhapsody 2 digital piano fills your home or studio with impressive looks, great sound, realistic feel and plenty of features. Rhapsody 2 is built around 12 custom sounds crafted from a world-renown grand piano, vintage electric pianos, organs, strings, synths and more.',
+  price: 425,
+  image: 'https://images-na.ssl-images-amazon.com/images/I/51DxIVcV8PL._SL250_.jpg',
+  active_status: true,
+  inventory: 151,
+)
+ricks.items.create!(
+  name: 'Casio CDP-S100CS',
+  description: "Redesigned from the ground up, the CDP-S100 redefines value in a digital piano. It's a perfect piano for students, hobbyists, or pianists who need grand piano sound and feel in a small space. A newly-designed scaled hammer action keyboard features precise key weighting on each of the 88 keys.",
+  price: 529,
+  image: 'https://d1aeri3ty3izns.cloudfront.net/media/18/184757/1200/preview_5.jpg',
+  active_status: true,
+  inventory: 89,
+)
+ricks.items.create!(
+  name: 'Moog Matriarch Semi-Modular Analog Synthesizer',
+  description: 'Celebrate 15 years of Moogfest with the limited-edition Matriarch. This highly limited run of only 250 serialized units is almost gone, but there’s still some left if you hurry. What better way to commemorate Moog’s iconic music, art and technology festival than with this special version of their latest synth, complete with a Moogfest .',
+  price: 1999,
+  image: 'https://cdn3.volusion.com/nqlam.wslhe/v/vspfiles/photos/SKU46055-2.jpg?1557989421',
+  active_status: true,
+  inventory: 25,
 )

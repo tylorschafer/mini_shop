@@ -6,13 +6,13 @@
 <% @items.each do |item| %>
   <hr>
   <section>
-  <h3 style='one'><%= link_to "#{item.name}", "/items/#{item.id}" %></h3>
-  <p style='two'>Description: <%= item.description %></p>
-  <p style='three'>Price: <%= number_to_currency(item.price) %></p>
-  <%= image_tag item.image, :class => 'four' %>
-  <p style='five'>Active = <%= item.active_status.to_s.capitalize %></p>
-  <p style='six'>Stock: <%= item.inventory %></p>
-  <p style='seven'>Merchant: <%= item.merchant.name %> </p>
+  <h3 class='name'><%= link_to "#{item.name}", "/items/#{item.id}" %></h3>
+  <p class='description'>Description: <%= item.description %></p>
+  <p class='price'>Price: <%= number_to_currency(item.price) %></p>
+  <%= image_tag item.image, :class => 'image' %>
+  <p class='status'>Active = <%= item.active_status.to_s.capitalize %></p>
+  <p class='stock'>Stock: <%= item.inventory %></p>
+  <p class='merchant_name'>Merchant: <%= link_to item.merchant.name, "/merchants/#{item.merchant_id}" %> </p>
   </section>
   <hr>
 <% end %>
