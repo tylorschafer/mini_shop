@@ -9,7 +9,7 @@
 <center><%= image_tag @item.image, :class => 'three' %></center>
 <p class='four'>Description: <%= @item.description %></p>
 <p class='five'>Stock: <%= @item.inventory %></p>
-<p class='six'>Merchant: <%= @item.merchant.name %></p>
+<p class='six'>Merchant: <%= link_to @item.merchant.name, "/merchants/#{@item.merchant_id}" %></p>
 <p class='seven'><%= link_to 'Update Item', "/items/#{@item.id}/edit" %></p>
 <p class='eight'><%= link_to 'Delete Item', "/items/#{@item.id}", method: :delete %></p>
 </section>
